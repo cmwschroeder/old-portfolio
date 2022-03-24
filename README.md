@@ -12,8 +12,10 @@ This is the description
 
 ## Technologies
 
+HTML and CSS.
+
 ## Link
 
-
+https://cmwschroeder.github.io/Portfolio/
 
 ## Screenshots
