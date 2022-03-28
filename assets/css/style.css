@@ -32,8 +32,6 @@ nav {
     margin-top: 45px;
 }
 
-
-
 a {
     margin-right: 20px;
     font-size: large;
@@ -173,11 +171,73 @@ h5, #github {
     opacity: 1;
 }
 
+@media screen and (max-width: 991px) {
+    .cards {
+        height: 100px;
+        flex: 1 0 200px;
+        margin: 10px;
+    }
+
+    #first-proj {
+        height: 300px;
+        margin: 10px;
+        min-width: 200px;
+    }
+
+    #first-proj-content {
+        top: 200px;
+    }
+
+    .other-cards-content {
+        line-height: 1px;
+        top: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
     nav {
       flex-direction: column;
     }
     a {
         margin-bottom: 10px;
+    }
+
+    #picture-section {
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-right: 25px;
+        background-color: var(--coolBlue);
+    }
+
+    #first-proj {
+        min-width: 185px;
+    }
+
+    #contact-me-content {
+        flex-direction: column;
+    }
+
+    #about-me-h {
+        margin-right: 25px;
+    }
+    
+    #work-h {
+        margin-right: 28px
+    }
+
+    h5, #github {
+        font-size: 16px;
+    }
+
+    #about-me-para, #work-cards, #contact-me-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        border-left: 5px solid blue;
     }
   }
