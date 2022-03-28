@@ -1,3 +1,6 @@
+/* 
+ * Setting up some variables for colors
+ */
 :root {
     --headingColor: #36454F;
     --coolBlue: #6495ED;
@@ -12,6 +15,9 @@ body {
     margin: 0;
 }
 
+/* 
+ * Sets header to take up width of screen, gives background color and formats the two sections.
+ */
 header {
     width: 100%;
     background-color: var(--headingColor);
@@ -20,28 +26,45 @@ header {
     justify-content: space-between;
 }
 
+/* 
+ * Gives the main header with the name a background color and puts it in a position and sets text size.
+ */
 h1 {
     background-color: var(--coolBlue);
     padding-left: 20px;
     font-size: 40px;
 }
 
+
+/* 
+ * Styles the nav, calling the display and moving it down in the header.
+ */
 nav {
     display: flex;
     background-color: var(--headingColor);
     margin-top: 45px;
 }
 
+/*
+ * Styles the anchors in nav, giving a background color and making the font bigger.
+ */
 a {
     margin-right: 20px;
     font-size: large;
     color: #6495ED;
 }
 
+/*
+ * Makes the font size slightly bigger.
+ */
 p {
     font-size: 16px;
 }
 
+/*
+ * Styling for the section below the header, giving a background image and setting up flex
+ * between the picture and the heading
+ */
 #picture-section {
     width: 100%;
     height: 430px;
@@ -52,29 +75,44 @@ p {
     align-items: end;
 }
 
+/*
+ * Sizing the picture and moving it off the side of the screen
+ */
 #profile {
     height: 400px;
     width: 300px;
     margin: 15px;
 }
 
+/*
+ * Styling the heading in background section
+ */
 h2 {
     font-size: 35px;
     margin-right: 25px;
     background-color: var(--coolBlue);
 }
 
+/*
+ * Setting the display and width for all the sections with content
+ */
 #about-me-sect, #work-sect, #contact-me-sect {
     display: flex;
     width: 100%;
 }
 
+/*
+ * Styles all the headings on the left of the screen
+ */
 h3 {
     margin-left: 80px;
     font-size: 30px;
     color: var(--coolBlue);
 }
 
+/*
+ * Moves the content of the side of the screen and sets 
+ */
 #about-me-para, #work-cards, #contact-me-content {
     padding-left: 30px;
     padding-right: 30px;
@@ -196,8 +234,13 @@ h5, #github {
 
 @media screen and (max-width: 768px) {
 
+    header, #contact-me-content, #about-me-sect, #work-sect, #contact-me-sect {
+        flex-direction: column;
+    }
+
     nav {
       flex-direction: column;
+      margin-top: 10px;
     }
     a {
         margin-bottom: 10px;
@@ -215,29 +258,26 @@ h5, #github {
         background-color: var(--coolBlue);
     }
 
+    #about-me-para, #work-cards, #contact-me-content {
+        padding-left: 10x;
+        padding-right: 10px;
+        border-top: 5px solid blue;
+        border-left: none;
+    }
+
+    .cards {
+        flex: 1 0 150px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
     #first-proj {
-        min-width: 185px;
-    }
-
-    #contact-me-content {
-        flex-direction: column;
-    }
-
-    #about-me-h {
-        margin-right: 25px;
-    }
-    
-    #work-h {
-        margin-right: 28px
+        min-width: 145px;
+        margin-right: 2px;
+        margin-left: 2px;
     }
 
     h5, #github {
         font-size: 16px;
-    }
-
-    #about-me-para, #work-cards, #contact-me-content {
-        padding-left: 30px;
-        padding-right: 30px;
-        border-left: 5px solid blue;
     }
   }
