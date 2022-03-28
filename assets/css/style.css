@@ -1,13 +1,14 @@
 :root {
     --headingColor: #36454F;
     --coolBlue: #6495ED;
+    --backgroundColor: #d9dcd6
 }
 
 /*
  * Modifies the Body, adding a background color
  */
 body {
-    background-color: #d9dcd6;
+    background-color: var(--backgroundColor);
     margin: 0;
 }
 
@@ -64,19 +65,18 @@ h2 {
     background-color: var(--coolBlue);
 }
 
-#about-me-sect, #work-sect {
+#about-me-sect, #work-sect, #contact-me-sect {
     display: flex;
     width: 100%;
 }
 
 h3 {
     margin-left: 80px;
-    margin-right: 10px;
     font-size: 30px;
     color: var(--coolBlue);
 }
 
-#about-me-para, #work-cards {
+#about-me-para, #work-cards, #contact-me-content {
     padding-left: 30px;
     padding-right: 30px;
     border-left: 5px solid blue;
@@ -131,6 +131,36 @@ h4 {
     position: absolute;
     top: 100px;
 }
+
+#contact-me-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+h5, #github {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#github {
+    background-color: var(--backgroundColor);
+    margin-top: 25px;
+}
+
+#about-me-h {
+    margin-right: 50px;
+}
+
+#work-h {
+    margin-right: 56px
+}
+
+#contact-me-h {
+    margin-right: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
     nav {
