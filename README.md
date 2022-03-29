@@ -19,3 +19,17 @@ HTML and CSS.
 https://cmwschroeder.github.io/Portfolio/
 
 ## Screenshots
+
+Desktop:
+
+![Top of page](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-one.png)
+
+![Bottom of page](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-two.png)
+
+Tablet:
+
+![Project on tablet screen](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-three.png)
+
+Phone:
+
+![Project on phone screen](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-four.png)
