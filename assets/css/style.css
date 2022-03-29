@@ -119,12 +119,18 @@ h3 {
     border-left: 5px solid blue;
 }
 
+/*
+ * Sets up the cards for the work section, defines what to do when it can't fit on same line
+ */
 #work-cards {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
+/*
+ * For the first project, gives a border and makes sure it is the biggest of all the work projects.
+ */
 #first-proj {
     height: 500px;
     position: relative;
@@ -135,6 +141,9 @@ h3 {
     min-width: 400px;
 }
 
+/*
+ * For the cards that aren't the first project, makes them smaller and gives them a border
+ */
 .cards {
     flex-wrap: wrap;
     flex-direction: row;
@@ -146,16 +155,25 @@ h3 {
     margin: 10px;
 }
 
+/*
+ * Sets images to take up all provided space and gives a slight opacity property
+ */
 #work-sect img {
     width: 100%;
     height: 100%;
     opacity: 0.8;
 }
 
+/*
+ * Sets font size for all h4's
+ */
 h4 {
     font-size: 16px;
 }
 
+/*
+ * This is for the heading on the first project image, gives a color and sets the position
+ */
 #first-proj-content {
     background-color: var(--coolBlue);
     display: inline-block;
@@ -163,6 +181,9 @@ h4 {
     top: 300px;
 }
 
+/*
+ * This is for the headings in the other work project images, does the same color and positions correctly
+ */
 .other-cards-content {
     background-color: var(--coolBlue);
     display: inline-block;
@@ -170,94 +191,155 @@ h4 {
     top: 100px;
 }
 
+/*
+ * Sets flex display and places the elements in the footer section
+ */
 #contact-me-content {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
+/*
+ * Makes the headings and anchor in the footer the same size 
+ */
 h5, #github {
     font-size: 22px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
+/*
+ * Styles the link to github in contact me
+ */
 #github {
     background-color: var(--backgroundColor);
     margin-top: 25px;
 }
 
+/*
+ * Moves about me heading to better line up with page
+ */
 #about-me-h {
     margin-right: 50px;
 }
 
+/*
+ * Moves work heading to better line up with page
+ */
 #work-h {
     margin-right: 56px
 }
 
+/*
+ * Moves contact me heading to better line up with page
+ */
 #contact-me-h {
     margin-right: 10px;
 }
 
+/*
+ * Adds some animation and sets up styling for hovering over a work project
+ */
 .cards:hover, #first-proj:hover {
     box-shadow: 0px 0px 10px black, 0px 0px 10px black;
     margin: 5px;
     transition: margin 0.5s, transform 1.5s;
 }
 
+/*
+ * 
+ */
 #work-sect img:hover {
     opacity: 1;
 }
 
+/*
+ * Sets up the page to be responsive to tablet dimensions
+ */
 @media screen and (max-width: 991px) {
+    /*
+     * Changes the dimensions for cards to better fit to the screen size
+     */
     .cards {
         height: 100px;
         flex: 1 0 200px;
         margin: 10px;
     }
 
+    /*
+     * Changes height and min width for tablet dimensions to match other work cards
+     * while still staying bigger.
+     */
     #first-proj {
         height: 300px;
         margin: 10px;
         min-width: 200px;
     }
 
+    /*
+     * Moves headings for first project since the height was changed
+     */
     #first-proj-content {
         top: 200px;
     }
 
+    /*
+     * Moves heading for other projects since their height was also changed
+     */
     .other-cards-content {
         line-height: 1px;
         top: 30px;
     }
 }
 
+/*
+ * Sets up the page to be responsive to phone dimensions
+ */
 @media screen and (max-width: 768px) {
 
+    /*
+     * Changes the flex display for all sections in order to better use the smaller space
+     */
     header, #contact-me-content, #about-me-sect, #work-sect, #contact-me-sect {
         flex-direction: column;
     }
 
+    /*
+     * Sets the nav bar to a column since a row doesn't fit as well to the screen
+     */
     nav {
       flex-direction: column;
       margin-top: 10px;
     }
+
+    /*
+     * Sets bottom border so anchor links are not as close to each other
+     */
     a {
         margin-bottom: 10px;
     }
 
+    /*
+     * Changes the picture section with the background image to match the size
+     * of the new column layout
+     */
     #picture-section {
         display: flex;
         flex-direction: column;
         height: 550px;
     }
 
+    /*
+     * Changes font size to better match smaller screen
+     */
     h2 {
         font-size: 35px;
-        margin-right: 25px;
-        background-color: var(--coolBlue);
     }
 
+    /*
+     * Changes the border to the top part since the headings are now above.
+     */
     #about-me-para, #work-cards, #contact-me-content {
         padding-left: 10x;
         padding-right: 10px;
@@ -265,18 +347,27 @@ h5, #github {
         border-left: none;
     }
 
+    /*
+     * Makes cards smaller to better fit smaller screen
+     */
     .cards {
         flex: 1 0 150px;
         margin-right: 2px;
         margin-left: 2px;
     }
 
+    /*
+     * Makes first project card smaller to better fit smaller screen
+     */
     #first-proj {
         min-width: 145px;
         margin-right: 2px;
         margin-left: 2px;
     }
 
+    /*
+     * Makes font size smaller
+     */
     h5, #github {
         font-size: 16px;
     }
