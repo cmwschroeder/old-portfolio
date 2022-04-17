@@ -22,7 +22,7 @@ https://cmwschroeder.github.io/old-portfolio/
 
 Desktop:
 
-![Top of page](https://github.com/cmwschroeder/old-ortfolio/blob/main/assets/images/screenshot-one.png)
+![Top of page](https://github.com/cmwschroeder/old-portfolio/blob/main/assets/images/screenshot-one.png)
 
 ![Bottom of page](https://github.com/cmwschroeder/old-portfolio/blob/main/assets/images/screenshot-two.png)
 
