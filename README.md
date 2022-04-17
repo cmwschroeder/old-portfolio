@@ -16,20 +16,20 @@ HTML and CSS.
 
 ## Link
 
-https://cmwschroeder.github.io/Portfolio/
+https://cmwschroeder.github.io/old-portfolio/
 
 ## Screenshots
 
 Desktop:
 
-![Top of page](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-one.png)
+![Top of page](https://github.com/cmwschroeder/old-ortfolio/blob/main/assets/images/screenshot-one.png)
 
-![Bottom of page](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-two.png)
+![Bottom of page](https://github.com/cmwschroeder/old-portfolio/blob/main/assets/images/screenshot-two.png)
 
 Tablet:
 
-![Project on tablet screen](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-three.png)
+![Project on tablet screen](https://github.com/cmwschroeder/old-portfolio/blob/main/assets/images/screenshot-three.png)
 
 Phone:
 
-![Project on phone screen](https://github.com/cmwschroeder/Portfolio/blob/main/assets/images/screenshot-four.png)
+![Project on phone screen](https://github.com/cmwschroeder/old-portfolio/blob/main/assets/images/screenshot-four.png)
